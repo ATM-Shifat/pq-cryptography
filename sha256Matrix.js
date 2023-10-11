@@ -37,9 +37,9 @@ function matrixToSha256(matrix) {
   }
 
   // Ensure the resulting string is 64 characters long.
-  // if (sha256Hash.length !== 64) {
-  //   throw new Error("Invalid matrix format. The resulting hash should have 64 characters.");
-  // }
+  if (sha256Hash.length !== 64) {
+    throw new Error("Invalid matrix format. The resulting hash should have 64 characters.");
+  }
 
   return sha256Hash;
 }
