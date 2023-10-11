@@ -1,0 +1,9 @@
+{
+  "name": "pq-cryptography",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mathjs": "^11.11.2"
+  }
+}
