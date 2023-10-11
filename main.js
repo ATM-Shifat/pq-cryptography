@@ -11,5 +11,6 @@ const keyMatrix = sha256ToMatrix(key);
 console.log(matrixToSha256(matrix))
 const cipher = matrixMultiplication(keyMatrix, matrix)
 const message = matrixMultiplication(math.inv(keyMatrix), cipher)
+
 console.log(matrixEqual(matrix, message))
 console.log(matrixToSha256(message) === sha256Hash)
