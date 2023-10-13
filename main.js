@@ -10,7 +10,7 @@ const key = "66859b7ade4e68cb65041b88a7ad5214df71cdcfa27dff2efcc80a81e9ba5fa0"
 const keyMatrix = matrixOperation.sha256ToMatrix(key)
 const cipher = matrixOperation.matrixMultiplication(keyMatrix, matrix)
 
-const keyMatrixInv = matrixOperation.matrixInv(keyMatrix)
+const keyMatrixInv = matrixOperation.matrixPower(keyMatrix, -1)
 const message = matrixOperation.matrixMultiplication(keyMatrixInv, cipher)
 
 console.log(matrixOperation.matrixEqual(matrix, message))
